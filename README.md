@@ -111,4 +111,5 @@ Led a 3-person engineering team through:
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE)
+
