@@ -42,3 +42,73 @@ Federated learning solves all four. Each vehicle (client) trains locally; only e
 ---
 
 ## Architecture
+
+<img width="599" height="453" alt="image" src="https://github.com/user-attachments/assets/81eacacb-3f6c-4f05-b38e-b53ec6c4c097" />
+
+---
+
+## Tech Stack
+
+| Component | Technology |
+|---|---|
+| ML Framework | TensorFlow + TensorFlow Federated |
+| Language | Python 3.8+ |
+| Visualization | Tableau |
+| Data | Simulated telematics dataset (contest provided) |
+
+---
+
+## Repository Structure
+
+techfeast-fleet-risk-ml/
+- DSP1/                # Data simulation / preprocessing pipeline 1
+- DSP2/                # Data simulation / preprocessing pipeline 2
+- drivermodel.py       # Federated driver-risk model
+- routemodel.py        # Federated route-risk model
+- vehiclemodel.py      # Federated vehicle-risk model
+- README.md
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.8+
+- TensorFlow 2.x
+- TensorFlow Federated
+
+### Install
+```bash
+pip install tensorflow tensorflow-federated pandas numpy scikit-learn
+```
+
+### Run a model
+```bash
+python drivermodel.py
+python routemodel.py
+python vehiclemodel.py
+```
+
+---
+
+## Results
+
+- **1st place** out of 100 global teams at IIT Bombay TECHFEST 2022
+- Successfully demonstrated federated training across simulated multi-vehicle clients
+- Generated Tableau dashboard surfacing high-risk routes and driver patterns to fleet operators
+- Preserved data privacy throughout — no raw telematics centralized
+
+---
+
+## Team
+
+Led a 3-person engineering team through:
+- Federated learning architecture design
+- Model training and tuning across three risk dimensions
+- Dashboard design and final presentation
+
+---
+
+## License
+
+MIT
